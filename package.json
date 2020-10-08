@@ -1,8 +1,14 @@
 {
   "name": "@apacheli/eslint-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "My ESLint config",
   "main": ".eslintrc",
+  "files": [
+    ".eslintrc.json"
+  ],
+  "scripts": {
+    "prepare": "js-yaml .eslintrc.yaml > .eslintrc.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Apacheli/eslint-config.git"
@@ -13,10 +19,7 @@
     "url": "https://github.com/Apacheli/eslint-config/issues"
   },
   "homepage": "https://github.com/Apacheli/eslint-config#readme",
-  "dependencies": {
-    "babel-eslint": "^10.1.0"
-  },
   "devDependencies": {
-    "eslint": "^7.5.0"
+    "js-yaml": "^3.14.0"
   }
 }
